@@ -1,4 +1,4 @@
-package br.gov.pa.sefa;
+package com.redhat;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;

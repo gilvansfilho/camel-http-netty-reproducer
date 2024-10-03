@@ -1,4 +1,4 @@
-package br.gov.pa.sefa;
+package com.redhat;
 
 import org.apache.camel.support.DefaultHeaderFilterStrategy;
 import org.apache.camel.support.http.HttpUtil;
