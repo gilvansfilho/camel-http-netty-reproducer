@@ -24,7 +24,7 @@ public class PolicyRoute extends RouteBuilder {
             .maximumRedeliveries(0)
             .log(LoggingLevel.ERROR, logName, ">>> ${routeId} - Caught exception: ${exception.stacktrace}");
 
-        from("netty-http:proxy://0.0.0.0:8080")
+        from("netty-http:proxy://0.0.0.0:8080?headerFilterStrategy=#customHeaderFilterStrategy")
             .id("3scale-policy-proxy")
             .log(LoggingLevel.INFO, "HTTP HEADERS: ${headers}")
             .removeHeader("Authorization")
